@@ -214,10 +214,11 @@ def prepare_dataset():
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42, stratify=y)
     
     print(f"\nSaving preprocessed data artifacts (.npy) to disk...")
-    np.save('X_train.npy', X_train)
-    np.save('X_test.npy', X_test)
-    np.save('y_train.npy', y_train)
-    np.save('y_test.npy', y_test)
+    os.makedirs('processed', exist_ok=True)
+    np.save('processed/X_train.npy', X_train)
+    np.save('processed/X_test.npy', X_test)
+    np.save('processed/y_train.npy', y_train)
+    np.save('processed/y_test.npy', y_test)
     print("Done! Formatted Data is saved and ready for model.ipynb.")
 
 if __name__ == '__main__':
@@ -230,5 +231,4 @@ if __name__ == '__main__':
     # generate_filtered_spectrograms()
     
     # 3. Create, balance, normalize, split and save the datasets for training.
-    # prepare_dataset()
-    pass
+    prepare_dataset()
