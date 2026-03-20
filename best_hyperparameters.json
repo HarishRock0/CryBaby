@@ -1,0 +1,4 @@
+{ "dropout_rate": 0.5,
+  "l2_val": 0.1,
+  "dense_units": 128,
+  "lr": 5e-05}
