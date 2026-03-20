@@ -56,10 +56,10 @@ def build_model(hp):
 def run_tuning():
     print("Loading preprocessed data...")
     try:
-        X_train = np.load('X_train.npy')
-        y_train = np.load('y_train.npy')
-        X_test = np.load('X_test.npy')
-        y_test = np.load('y_test.npy')
+        X_train = np.load('processed/X_train.npy')
+        y_train = np.load('processed/y_train.npy')
+        X_test = np.load('processed/X_test.npy')
+        y_test = np.load('processed/y_test.npy')
     except FileNotFoundError:
         print("Preprocessed data arrays not found! Please run preprocessing.py first or ensure .npy files exist.")
         return

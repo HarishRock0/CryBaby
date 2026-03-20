@@ -172,7 +172,7 @@ def prepare_dataset():
                     img_resized = cv2.resize(img, (224, 224))
                     # add original image
                     X.append(img_resized)
-                    y.append(idx)
+                    y.append(idx)   
                     # add spec-augmented version
                     X.append(spec_augment_image(img_resized))
                     y.append(idx)
