@@ -95,7 +95,7 @@ def run_tuning():
 
     tuner.search(
         train_dataset,
-        epochs=10,
+        epochs=30,
         validation_data=val_dataset,
         callbacks=[
             EarlyStopping(patience=8, restore_best_weights=True, monitor='val_accuracy'),

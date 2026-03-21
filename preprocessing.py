@@ -222,13 +222,13 @@ def prepare_dataset():
     print("Done! Formatted Data is saved and ready for model.ipynb.")
 
 if __name__ == '__main__':
-    # Uncomment the function you want to execute locally.
-    
-    # 1. First, create spectrograms out of your audio (uncomment line below)
+    # Full preprocessing pipeline — runs all steps in order.
+
+    # # Step 1: Generate mel-spectrograms from raw audio files (with augmentation)
     # generate_spectrograms()
-    
-    # 2. Optionally, generate filtered spectrograms (uncomment line below)
+
+    # # Step 2: Generate frequency-filtered spectrograms from raw audio files
     # generate_filtered_spectrograms()
-    
-    # 3. Create, balance, normalize, split and save the datasets for training.
+
+    # Step 3: Load spectrograms, apply SpecAugment, balance, normalize, split and save .npy artifacts
     prepare_dataset()

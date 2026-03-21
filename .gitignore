@@ -1,7 +1,11 @@
-BCS/*
-tuning_dir/untitled_project/*
-processed/*
-processed/X_train.npy
-processed/X_test.npy
-processed/y_train.npy
-processed/y_test.npy
+
+# Ignore all files in BCS and its subfolders
+BCS/**
+
+# Ignore all files in tuning_dir/untitled_project and its subfolders
+tuning_dir/untitled_project/**
+
+# Ignore all files in processed and its subfolders
+processed/**
+
+crybaby_best_model.keras
