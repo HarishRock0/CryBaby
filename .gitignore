@@ -27,3 +27,9 @@ model_output.ipynb
 .vscode/
 .idea/
 .DS_Store
+
+
+airflow.db
+logs/
+*.log
+*.db

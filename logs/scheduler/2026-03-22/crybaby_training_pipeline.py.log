@@ -307,3 +307,45 @@ ModuleNotFoundError: No module named 'airflow.providers.standard'
 [2026-03-22T19:36:39.208+0000] {logging_mixin.py:190} INFO - [2026-03-22T19:36:39.208+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2026-03-22T19:36:39.221+0000] {logging_mixin.py:190} INFO - [2026-03-22T19:36:39.221+0000] {dag.py:4180} INFO - Setting next_dagrun for crybaby_training_pipeline to None, run_after=None
 [2026-03-22T19:36:39.262+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/crybaby_training_pipeline.py took 0.104 seconds
+[2026-03-22T19:37:09.541+0000] {processor.py:186} INFO - Started process (PID=184) to work on /opt/airflow/dags/crybaby_training_pipeline.py
+[2026-03-22T19:37:09.542+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/crybaby_training_pipeline.py for tasks to queue
+[2026-03-22T19:37:09.545+0000] {logging_mixin.py:190} INFO - [2026-03-22T19:37:09.545+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/crybaby_training_pipeline.py
+[2026-03-22T19:37:09.572+0000] {processor.py:925} INFO - DAG(s) 'crybaby_training_pipeline' retrieved from /opt/airflow/dags/crybaby_training_pipeline.py
+[2026-03-22T19:37:09.598+0000] {logging_mixin.py:190} INFO - [2026-03-22T19:37:09.598+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-22T19:37:09.611+0000] {logging_mixin.py:190} INFO - [2026-03-22T19:37:09.611+0000] {dag.py:4180} INFO - Setting next_dagrun for crybaby_training_pipeline to None, run_after=None
+[2026-03-22T19:37:09.659+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/crybaby_training_pipeline.py took 0.125 seconds
+[2026-03-22T19:37:39.864+0000] {processor.py:186} INFO - Started process (PID=185) to work on /opt/airflow/dags/crybaby_training_pipeline.py
+[2026-03-22T19:37:39.866+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/crybaby_training_pipeline.py for tasks to queue
+[2026-03-22T19:37:39.867+0000] {logging_mixin.py:190} INFO - [2026-03-22T19:37:39.867+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/crybaby_training_pipeline.py
+[2026-03-22T19:37:39.881+0000] {processor.py:925} INFO - DAG(s) 'crybaby_training_pipeline' retrieved from /opt/airflow/dags/crybaby_training_pipeline.py
+[2026-03-22T19:37:39.901+0000] {logging_mixin.py:190} INFO - [2026-03-22T19:37:39.901+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-22T19:37:39.911+0000] {logging_mixin.py:190} INFO - [2026-03-22T19:37:39.911+0000] {dag.py:4180} INFO - Setting next_dagrun for crybaby_training_pipeline to None, run_after=None
+[2026-03-22T19:37:39.941+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/crybaby_training_pipeline.py took 0.081 seconds
+[2026-03-22T19:38:10.114+0000] {processor.py:186} INFO - Started process (PID=186) to work on /opt/airflow/dags/crybaby_training_pipeline.py
+[2026-03-22T19:38:10.115+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/crybaby_training_pipeline.py for tasks to queue
+[2026-03-22T19:38:10.117+0000] {logging_mixin.py:190} INFO - [2026-03-22T19:38:10.117+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/crybaby_training_pipeline.py
+[2026-03-22T19:38:10.128+0000] {processor.py:925} INFO - DAG(s) 'crybaby_training_pipeline' retrieved from /opt/airflow/dags/crybaby_training_pipeline.py
+[2026-03-22T19:38:10.146+0000] {logging_mixin.py:190} INFO - [2026-03-22T19:38:10.145+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-22T19:38:10.156+0000] {logging_mixin.py:190} INFO - [2026-03-22T19:38:10.155+0000] {dag.py:4180} INFO - Setting next_dagrun for crybaby_training_pipeline to None, run_after=None
+[2026-03-22T19:38:10.186+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/crybaby_training_pipeline.py took 0.076 seconds
+[2026-03-22T19:38:40.350+0000] {processor.py:186} INFO - Started process (PID=187) to work on /opt/airflow/dags/crybaby_training_pipeline.py
+[2026-03-22T19:38:40.351+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/crybaby_training_pipeline.py for tasks to queue
+[2026-03-22T19:38:40.353+0000] {logging_mixin.py:190} INFO - [2026-03-22T19:38:40.353+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/crybaby_training_pipeline.py
+[2026-03-22T19:38:40.365+0000] {processor.py:925} INFO - DAG(s) 'crybaby_training_pipeline' retrieved from /opt/airflow/dags/crybaby_training_pipeline.py
+[2026-03-22T19:38:40.385+0000] {logging_mixin.py:190} INFO - [2026-03-22T19:38:40.385+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-22T19:38:40.401+0000] {logging_mixin.py:190} INFO - [2026-03-22T19:38:40.401+0000] {dag.py:4180} INFO - Setting next_dagrun for crybaby_training_pipeline to None, run_after=None
+[2026-03-22T19:38:40.434+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/crybaby_training_pipeline.py took 0.088 seconds
+[2026-03-22T19:39:10.612+0000] {processor.py:186} INFO - Started process (PID=188) to work on /opt/airflow/dags/crybaby_training_pipeline.py
+[2026-03-22T19:39:10.613+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/crybaby_training_pipeline.py for tasks to queue
+[2026-03-22T19:39:10.615+0000] {logging_mixin.py:190} INFO - [2026-03-22T19:39:10.615+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/crybaby_training_pipeline.py
+[2026-03-22T19:39:10.665+0000] {processor.py:925} INFO - DAG(s) 'crybaby_training_pipeline' retrieved from /opt/airflow/dags/crybaby_training_pipeline.py
+[2026-03-22T19:39:10.686+0000] {logging_mixin.py:190} INFO - [2026-03-22T19:39:10.686+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-22T19:39:10.695+0000] {logging_mixin.py:190} INFO - [2026-03-22T19:39:10.695+0000] {dag.py:4180} INFO - Setting next_dagrun for crybaby_training_pipeline to None, run_after=None
+[2026-03-22T19:39:10.727+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/crybaby_training_pipeline.py took 0.120 seconds
+[2026-03-22T19:39:40.953+0000] {processor.py:186} INFO - Started process (PID=189) to work on /opt/airflow/dags/crybaby_training_pipeline.py
+[2026-03-22T19:39:40.954+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/crybaby_training_pipeline.py for tasks to queue
+[2026-03-22T19:39:40.956+0000] {logging_mixin.py:190} INFO - [2026-03-22T19:39:40.956+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/crybaby_training_pipeline.py
+[2026-03-22T19:39:40.973+0000] {processor.py:925} INFO - DAG(s) 'crybaby_training_pipeline' retrieved from /opt/airflow/dags/crybaby_training_pipeline.py
+[2026-03-22T19:39:40.995+0000] {logging_mixin.py:190} INFO - [2026-03-22T19:39:40.995+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2026-03-22T19:39:41.006+0000] {logging_mixin.py:190} INFO - [2026-03-22T19:39:41.006+0000] {dag.py:4180} INFO - Setting next_dagrun for crybaby_training_pipeline to None, run_after=None
+[2026-03-22T19:39:41.044+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/crybaby_training_pipeline.py took 0.095 seconds
