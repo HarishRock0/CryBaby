@@ -1,0 +1,20 @@
+artifact_path: file:c:/Users/Harik/OneDrive/Documents/GitHub/CryBaby/mlruns/1/models/m-af1ca71c7fc644c2b2412e2d12d73613/artifacts
+flavors:
+  keras:
+    data: data
+    keras_backend: tensorflow
+    keras_version: 3.13.0
+    save_exported_model: false
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.keras
+    python_version: 3.12.10
+mlflow_version: 3.10.1
+model_id: m-af1ca71c7fc644c2b2412e2d12d73613
+model_size_bytes: 95673397
+model_uuid: m-af1ca71c7fc644c2b2412e2d12d73613
+prompts: null
+run_id: 12c22516bda34b64bb6c58295f3f2754
+utc_time_created: '2026-03-21 09:00:01.035451'

@@ -1,0 +1,52 @@
+services:
+  webserver:
+    build: .
+    restart: always
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+      - AIRFLOW__CORE__FERNET_KEY=80pB8aJ4YWc7R0HJLDQQ0eayfRp3BpKnJ_sW9emIcSw=
+      - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=True
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__WEBSERVER__SECRET_KEY=your_secret_key_here
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:////opt/airflow/airflow.db
+      - MLFLOW_TRACKING_URI=http://mlflow:5000
+      - AIRFLOW__OPENLINEAGE__DISABLED=True
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./mlruns:/opt/airflow/mlruns
+      - ./airflow.db:/opt/airflow/airflow.db
+    ports:
+      - "8080:8080"
+    command: bash -c "airflow db init && airflow users create --username admin --password admin --firstname Admin --lastname User --role Admin --email admin@example.com && airflow webserver"
+
+  scheduler:
+    build: .
+    restart: always
+    depends_on:
+      - webserver
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=SequentialExecutor
+      - AIRFLOW__CORE__FERNET_KEY=80pB8aJ4YWc7R0HJLDQQ0eayfRp3BpKnJ_sW9emIcSw=
+      - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=True
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+      - AIRFLOW__WEBSERVER__SECRET_KEY=your_secret_key_here
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:////opt/airflow/airflow.db
+      - MLFLOW_TRACKING_URI=http://mlflow:5000
+      - AIRFLOW__OPENLINEAGE__DISABLED=True
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./mlruns:/opt/airflow/mlruns
+      - ./airflow.db:/opt/airflow/airflow.db
+    command: airflow scheduler
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:latest
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlruns:/mlruns
+    command: mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root /mlruns --host 0.0.0.0

@@ -1,0 +1,12 @@
+tensorflow
+keras-tuner
+librosa
+opencv-python
+scikit-learn
+matplotlib
+seaborn
+mlflow
+flake8
+pytest
+nbconvert
+ipykernel
